@@ -1,0 +1,435 @@
+@font-face {
+    font-family: 'Nunito Sans Regular';
+    src: url(../fonts/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito Sans Bold';
+    src: url(../fonts/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito Sans Light';
+    src: url(../fonts/NunitoSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito Sans Semibold';
+    src: url(../fonts/NunitoSans-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans Regular', sans-serif;
+    outline: none!important;
+}
+
+*:focus {
+    outline: 0;
+    outline: none;
+}
+
+:focus:link:hover:active {
+    outline: none;
+}
+
+button:active {
+    border-style: outset;
+}
+
+:active {
+    border-style: outset;
+}
+
+*:focus, *, *:hover, *:active, button:active {
+    outline: none;
+    color: none;
+    text-decoration: none;
+    text-transform: none;
+    border: transparent;
+}
+
+#tab-menu a:focus, #tab-menu a:hover, #tab-menu a:active {
+    background-color: #fff;
+}
+
+a, a:hover, a:active, a:focus {
+    color: initial;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: none;
+    border-color: #fff;
+}
+
+.bg-tutorial {
+    background-image: url(../img/background-tutorial.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-tutorial h2 {
+    color: #00B59D;
+    font-weight: bold;
+}
+
+.bg-logo {
+    background-image: url(../img/background-logo.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: absolute;
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+button.owl-dot {
+    border-radius: 20px;
+    width: 20px;
+    background-color: black;
+    height: 20px;
+}
+
+.owl-carousel .owl-dots button.owl-dot {
+    border-radius: 20px;
+    width: 10px;
+    border-width: 2px;
+    height: 10px;
+    padding: 5px!important;
+    margin: 5px;
+    border: 1px solid #BFBFBF;
+}
+
+.final-tutorial {
+    background-color: #00CFB3;
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-iniciar {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 188, 163), rgba(0, 207, 179));
+}
+
+.iniciar-button {
+    background-color: white;
+    color: #00CFB3;
+    position: fixed;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    width: 30%;
+    transition: 0.2s;
+}
+
+.iniciar-button:active {
+    background-color: #00CFB3;
+    color: white;
+}
+
+.desc-iniciar {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    color: #FCFCFC;
+}
+
+.header-main {
+    height: 70px;
+    width: 100%;
+    background-color: #3DC4B2;
+    -webkit-box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.16);
+-moz-box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.16);
+box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.16);
+}
+
+#deviceList, #deviceList ul, #mainPage {
+    background-color: white;
+    border-color: transparent;
+}
+
+#deviceList li {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #CBCBCB;
+    text-align: center;
+    -webkit-box-shadow: 7px 4px 24px -12px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 7px 4px 24px -12px rgba(0, 0, 0, 0.48);
+    box-shadow: 7px 4px 24px -12px rgba(0, 0, 0, 0.48);
+    margin: 10px 0px;
+    background-color: white;
+    transition: 0.2s;
+    padding: 20px 0px;
+}
+
+#deviceList li:active {
+    background-color: aquamarine;
+}
+
+.header-main h1 {
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: white;
+}
+
+#card button {
+    transition: 0.5s;
+}
+
+#card button:active {
+    background-color: #FFFCEF;
+    -webkit-box-shadow: 10px 10px 31px -2px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 10px 10px 31px -2px rgba(0, 0, 0, 0.38);
+    box-shadow: 10px 10px 31px -2px rgba(0, 0, 0, 0.38);
+}
+
+.primary-button {
+    position: fixed;
+    bottom: 20px;
+    width: 30%;
+    left: 0;
+    text-transform: uppercase;
+    right: 0;
+    border: 1px solid #00CFB3;
+    background-color: transparent;
+    color: #00CFB3;
+    transition: 0.2s;
+}
+
+.primary-button:active {
+    position: fixed;
+    bottom: 20px;
+    width: 30%;
+    left: 0;
+    text-transform: uppercase;
+    right: 0;
+    border: 1px solid #00CFB3;
+    background-color: #00CFB3;
+    color: white;
+}
+
+.owl-carousel .owl-dots button.owl-dot.active {
+    border-radius: 20px;
+    width: 10px;
+    background-color: #BFBFBF;
+    height: 10px;
+}
+
+.sub-header {
+    height: 130px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #3DC4B2;
+    margin-top: -10px;
+}
+
+.icon-final {
+    width: 30px;
+    height: auto;
+    margin: 0px 5px;
+}
+
+.bg-iniciar h2 {
+    color: white;
+}
+
+.cards img.serpent {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.sub-header h2 {
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h1, h2 {
+    font-family: 'Nunito Sans Bold', sans-serif;
+}
+
+.search-bar {
+    border-radius: 10px;
+    width: 100%;
+    border: transparent;
+    background-color: #F8F8F8;
+    height: 40px;
+    padding-left: 50px;
+}
+
+.expanded-nav-search {}
+
+.tuto-1 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+#tab-menu.tab-menu {
+    background-color: #fff;
+}
+
+.nav-top {
+    margin-bottom: 20px;
+}
+
+.opt-config {
+    margin-top: 20px;
+}
+
+.opt-config h2, .opt-config p {
+    margin: 0;
+    text-align: left;
+}
+
+.opt-config img {
+    width: 35px;
+    padding: 2px;
+}
+
+.opt-config button {
+    padding-left: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.opt-ajuda h2 {
+    margin-bottom: 10px;
+}
+
+#tab-menu img {
+    height: 25px;
+    margin: 7px;
+    width: auto;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #CFCFCF;
+    background-color: white;
+}
+
+.bg-final {
+    height: 250px;
+    width: 100%;
+    background-color: gray;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.owl-carousel .owl-item img {
+    height: 300px;
+}
+
+.tutorial-screens {
+    position: relative;
+}
+
+.tutorial-screens1 {
+    position: absolute;
+}
+
+.btn-bluetooth {
+    border: 3px solid #0A3C91;
+    border-radius: 20px;
+}
+
+.progress {
+    height: 30px;
+}
+
+.progress-bar {
+    font-size: 20px;
+    color: #606060;
+    background-color: #FFDD4A;
+}
+
+.btn-bluetooth img {
+    height: 35px;
+}
+
+/* .progress-bar {
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #7EDE82;
+} */
+
+.cards {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    -webkit-box-shadow: 9px 6px 23px -8px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 9px 6px 23px -8px rgba(0, 0, 0, 0.43);
+    box-shadow: 9px 6px 23px -8px rgba(0, 0, 0, 0.43);
+    margin: 20px 0px;
+}
+
+input.search-bar {
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.cards h2, .cards p {
+    margin: 0;
+}
+
+#card {
+    margin-bottom: 100px;
+}
+
+.cards.lock {
+    color: rgba(175, 175, 175, 0.6);
+    background-color: rgba(175, 175, 175, 0.6);
+    border-color: rgba(175, 175, 175, 0.6);
+}
+
+.img-1-tutorial {
+    width: 100px;
+    height: auto;
+    background-color: black;
+}
+
+.app {
+    margin-top: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar a.active {
+    color: black
+}

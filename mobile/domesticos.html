@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Tip Talk</title>
+</head>
+
+<body>
+    <div class="header-main d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <a href="animais.html">
+                <img src="img/return-icon.svg" alt="">
+            </a>
+            <h1 class="ml-3">Animais</h1>
+        </div>
+    </div>
+    <div class="sub-header d-flex align-items-end">
+        <div class="container ">
+            <h2 class="mb-4">Domésticos</h2>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Progresso</h2>
+        <div class="progress">
+            <div id="progress1" class="progress-bar" role="progressbar" style="" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">0%</div>
+        </div>
+        <div class="d-flex mt-4 justify-content-between align-items-end">
+            <h2 class="mb-0">Tarefas</h2>
+
+            <button type="button" class="btn btn-bluetooth" data-toggle="modal" data-target="#modalExemplo">
+               <img src="img/bluetooth-logo-conectar.svg" alt=""> 
+            </button>
+        </div>
+        <div id="card" class="">
+            <a href="#">
+                <button onclick="player()" class="cards d-flex justify-content-between align-items-center">
+                    <img id="cachorro" class="icon-final" src="./img/play.svg" alt="">
+                    <div class="text-left ml-4">
+                        <h2>Cachorro</h2>
+                        <p>Domésticos, Marinhos,
+                            Selvagens...</p>
+                    </div>
+                    <img src="img/down-arrow.svg" alt="">
+                </button>
+            </a>
+            <a href="#">
+                <button onclick="player1()" class="cards d-flex justify-content-between align-items-center">
+                    <img id="gato" class="icon-final" src="img/play.svg" alt="">
+                    <div class="text-left ml-4">
+                        <h2>Gato</h2>
+                        <p>Domésticos, Marinhos,
+                            Selvagens...</p>
+                    </div>
+                    <img src="img/down-arrow.svg" alt="">
+                </button>
+            </a>
+            <a href="#">
+                <button onclick="player2()" class="cards d-flex justify-content-between align-items-center">
+                    <img id="passaro" class="icon-final" src="img/play.svg" alt="">
+                    <div class="text-left ml-4">
+                        <h2>Pássaro</h2>
+                        <p>Domésticos, Marinhos,
+                            Selvagens...</p>
+                    </div>
+                    <img src="img/down-arrow.svg" alt="">
+                </button>
+            </a>
+        </div>
+
+
+    </div>
+
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Escolha a opção HC-05 e volte para a tela anterior
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="app">
+                        <div class="container">
+
+                            <div id="mainPage">
+                                <button id="deviceList" class="">
+                                </button>
+                                <button id="refreshButton" class="btn btn-primary w-100 mb-4">Atualizar</button>
+                            </div>
+                            <div id="detailPage">
+                                <h2>Conectado, pode fechar a tela!</h2>
+                                <!-- <div id="resultDiv"></div>
+                                <div id="consoleLog"></div> -->
+                                <!-- <div>
+                                    <input type="text" id="messageInput" value="Hello" />
+                                    <button id="sendButton">Send</button>
+                                </div> -->
+                                <!-- <button class="btn btn-primary" id="disconnectButton">Disconnect</button> -->
+                            </div>
+                            <!-- <div class="d-block text-center mt-5" id="statusDiv"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tab-menu" class="navbar tab-menu d-flex justify-content-around">
+        <a href="home.html">
+            <div class="d-flex flex-column">
+                <img src="img/home-icon.svg" alt="">
+            </div>
+        </a>
+        <a href="config.html">
+            <div class="d-flex flex-column">
+                <img src="img/config-icon.svg" alt="">
+            </div>
+        </a>
+        <a href="ajuda.html">
+            <div class="d-flex flex-column">
+                <img src="img/help-icon.svg" alt="">
+            </div>
+        </a>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>

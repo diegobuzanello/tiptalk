@@ -7,7 +7,7 @@ html {
   --lightBg: #fff;
   --lightColor: #232323;
   --primary-col: #00b9a0;
-  --input: #F7CB00;
+  --input: #f7cb00;
   --input-circle: #fff;
   --font-1: #00b9a0;
   --font-2: #131313;
@@ -21,7 +21,7 @@ html {
   --bk-5: #204443;
 }
 
-html[data-theme=dark] {
+html[data-theme="dark"] {
   --input-circle: rgb(53, 53, 53);
   --lightBtn: #ffbd07;
   --lightBg: #232323;
@@ -44,7 +44,7 @@ h1 {
   font-size: 280%;
   line-height: 45px;
   font-weight: bold;
-  color: var(--font-1);
+  color: #2897fe;
 }
 
 h2 {
@@ -74,11 +74,12 @@ h2 {
   flex-basis: auto;
 }
 
-header #button1, header #button2 {
+header #button1,
+header #button2 {
   background-color: transparent;
   border: transparent;
 }
-header input[type=checkbox] {
+header input[type="checkbox"] {
   height: 0;
   width: 0;
   visibility: hidden;
@@ -307,8 +308,9 @@ html {
   text-align: right;
 }
 
-#use-1 p, #use-2 p {
-  color: #4D4D4D;
+#use-1 p,
+#use-2 p {
+  color: #4d4d4d;
 }
 
 small u {
@@ -318,7 +320,7 @@ small u {
 section h2 {
   font-size: 200%;
   font-weight: bold;
-  color: #00B9A0;
+  color: #00b9a0;
   font-size: 30px;
 }
 section h2.about {
@@ -340,7 +342,7 @@ section .kid-photo {
 }
 
 .footer-msg {
-  color: #B7B7B7;
+  color: #b7b7b7;
 }
 
 #use-1 {
@@ -477,8 +479,8 @@ input:checked + .slider:before {
 }
 @media (max-width: 990px) {
   #use-1,
-#use-2,
-#use-3 {
+  #use-2,
+  #use-3 {
     height: auto;
   }
 
@@ -492,7 +494,12 @@ input:checked + .slider:before {
   }
 }
 @media (max-width: 1200px) {
-  .circle-1, .line-1, .circle-2, .line-2, .circle-3, .line-3 {
+  .circle-1,
+  .line-1,
+  .circle-2,
+  .line-2,
+  .circle-3,
+  .line-3 {
     display: none;
   }
 }
